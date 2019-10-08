@@ -13,7 +13,7 @@ export const query = graphql`
     }
   }
 `
-
+// game template
 function game({ data }) {
   console.log("DATA--> ", data);
   const game = data.AllGames.gameByName
