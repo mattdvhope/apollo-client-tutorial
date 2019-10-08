@@ -1,6 +1,7 @@
 import React from "react"
 import { gql } from "apollo-boost"
 import { useQuery } from "@apollo/react-hooks"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -22,7 +23,7 @@ const IndexPage = () => {
     <Layout>
       <ul>
         {data.games.map(game => (
-          <li key={game.vg_id}>{game.vg_name}</li>
+          <li key={game.vg_id}><Link to={"/game/" + game.vg_name}>{game.vg_name}</Link></li>
         ))}
       </ul>
     </Layout>
