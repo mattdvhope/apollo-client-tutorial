@@ -20,7 +20,7 @@ module.exports = {
       options: {
         typeName: 'GAMES_API',
         fieldName: 'AllGames',
-        url: 'http://localhost:4000',
+        url: process.env.GATSBY_API_URI || 'http://localhost:4000',
       },
     },
     {
