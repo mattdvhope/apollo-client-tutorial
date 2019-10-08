@@ -23,7 +23,7 @@ const IndexPage = () => {
     <Layout>
       <ul>
         {data.games.map(game => (
-          <li key={game.vg_id}><Link to={"/game/" + game.vg_name}>{game.vg_name}</Link></li>
+          <li key={game.vg_id}><Link to={`/game/${game.vg_name}`}>{game.vg_name}</Link></li>
         ))}
       </ul>
     </Layout>
